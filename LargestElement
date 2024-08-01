@@ -1,0 +1,32 @@
+// 
+package SecondDemo;
+
+import java.util.Scanner;
+
+public class FindLargest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Enter the Size Elements = ");
+		int n = sc.nextInt();
+
+		int[] number = new int[n];
+
+		System.out.println("Enter The Numbers = ");
+		for(int i=0; i<n;i++) {
+			number[i] = sc.nextInt();
+		}
+
+		int max = number[0];
+
+		for(int num:number) {
+			if(num>max) {
+				max = num;
+			}
+		}
+
+		System.out.println("The largest number is = " + max);
+	}
+}
